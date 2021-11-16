@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <title>Frontend Mentor | E-commerce product page</title>
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/9e5ba2e3f5.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="toggle">
+                <div class="menu-toggle"><i class="fas fa-bars"></i></div>
+            </div>
+            <img src="images/logo.svg" alt="logo" class="logo">
+            <nav>
+                <ul class="menu">
+                    <div class="menu-close"><i class="fas fa-times"></i></div>
+                    <li><a href="#">Collections</a></li>
+                    <li><a href="#">Men</a></li>
+                    <li><a href="#">Women</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="cart">
+                <div class="num"></div>
+                <i class="fas fa-shopping-cart"></i>
+                <img src="images/image-avatar.png" class="profile">
+            </div>
+            <div class="cart-box">
+                <h3>Cart</h3>
+                <div class="content">
+                    <div class="details">
+                        <img src="images/image-product-1-thumbnail.jpg">
+                        <div class="info">
+                            <p>Fall Limited Edition Sneakers</p>
+                            <p>$125.00 x <label class="nums"></label> <span class="total"> $375.00</span></p>
+                        </div>
+                        <div class="delete"><i class="fas fa-trash-alt"></i></div>
+                    </div>
+                    <button class="btn-check">checkout</button>
+                </div>
+
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="product">
+            <div class="full-img" id="fullImgBox">
+                <div class="inner-img">
+                    <img src="images/image-product-1.jpg" alt="product-1" id="fullImg">
+                    <span class="close" id="close"><i class="fas fa-times"></i></span>
+                    <span class="arrow-left"><i class="fas fa-chevron-left"></i></span>
+                    <span class="arrow-right"><i class="fas fa-chevron-right"></i></span>
+                </div>
+                <div class="small-imgs">
+                    <div class="img-box">
+                        <img src="images/image-product-1-thumbnail.jpg" alt="image-product-1.jpg" class="img">
+                    </div>
+                    <div class="img-box">
+                        <img src="images/image-product-2-thumbnail.jpg" alt="image-product-2.jpg" class="img">
+                    </div>
+                    <div class="img-box">
+                        <img src="images/image-product-3-thumbnail.jpg" alt="image-product-3.jpg" class="img">
+                    </div>
+                    <div class="img-box">
+                        <img src="images/image-product-4-thumbnail.jpg" alt="image-product-4.jpg" class="img">
+                    </div>
+                </div>
+
+            </div>
+            <div class="container">
+                <div class="left">
+                    <div class="big-img">
+                        <img src="images/image-product-1.jpg" alt="product-1" class="big ">
+                        <span class="arrow-left" id="left"><i class="fas fa-chevron-left"></i></span>
+                        <span class="arrow-right" id="right"><i class="fas fa-chevron-right"></i></span>
+                    </div>
+                    <div class="small-imgs">
+                        <div class="img-box active">
+                            <img src="images/image-product-1-thumbnail.jpg" alt="image-product-1.jpg">
+                        </div>
+                        <div class="img-box">
+                            <img src="images/image-product-2-thumbnail.jpg" alt="image-product-2.jpg">
+                        </div>
+                        <div class="img-box">
+                            <img src="images/image-product-3-thumbnail.jpg" alt="image-product-3.jpg">
+                        </div>
+                        <div class="img-box">
+                            <img src="images/image-product-4-thumbnail.jpg" alt="image-product-4.jpg">
+                        </div>
+                    </div>
+                </div>
+                <div class="right">
+                    <p class="type">Sneaker Company</p>
+                    <h1>Fall Limited Edition Sneakers</h1>
+                    <p class="desc">These low-profile sneakers are your perfect casual wear companion. Featuring a
+                        durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
+                    <div class="prices">
+                        <div class="box">
+                            <span class="price">$125.00</span>
+                            <span class="discount">50%</span>
+                        </div>
+                        <span class="old-price">$250.00</span>
+                    </div>
+                    <div class="form">
+                        <div class="number">
+                            <span class="minus">-</span>
+                            <input type="text" value="0" class="input" />
+                            <span class="plus">+</span>
+                        </div>
+                        <button class="btn-add"><i class="fas fa-shopping-cart"></i> Add to cart</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+<script src="js/main.js"></script>
+
+</html>
